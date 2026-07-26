@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="site_title">نابو | NABU - الدراسة في جامعة كارابوك</title>
+    <link rel="icon" href="assets/images/nabu-logo.png" type="image/png">
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet">
+    
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+    
+    <div id="sidebar-overlay" class="sidebar-overlay"></div>
+
+    
+    <aside id="sidebar" class="sidebar">
+        <div class="sidebar-header">
+            <div class="logo-container" style="display: flex; align-items: center; gap: 10px;">
+                <img src="assets/nabu-logo.png" alt="NABU Logo" class="brand-icon-img">
+                <span class="logo-text">NABU</span>
+            </div>
+            <button id="close-sidebar" class="icon-btn" aria-label="Close Menu">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+
+        <nav class="sidebar-nav">
+            <ul>
+                <li class="active">
+                    <a href="index.html">
+                        <i class="fa-solid fa-house"></i>
+                        <span data-i18n="nav_home">الرئيسية</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="process.html">
+                        <i class="fa-solid fa-route"></i>
+                        <span data-i18n="nav_process">خطوات التقديم</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="majors.html">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                        <span data-i18n="nav_majors">التخصصات</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="karabuk-guide.html">
+                        <i class="fa-solid fa-city"></i>
+                        <span data-i18n="nav_guide">دليل مدينة كارابوك</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="sidebar-divider"></div>
+
+        <div class="sidebar-extra">
+            <p class="sidebar-title" data-i18n="quick_contact">تواصل مباشر</p>
+            <a href=""https://wa.me/message/MKQ5H6XTA3RKH1" target="_blank" class="sidebar-whatsapp-btn">
+                <i class="fa-brands fa-whatsapp"></i>
+                <span data-i18n="whatsapp_agent">مستشار التقديم</span>
+            </a>
+        </div>
+    </aside>
+
+    
+    <header class="navbar">
+        <div class="navbar-left">
+            <button id="toggle-sidebar" class="icon-btn" aria-label="Toggle Menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <a href="index.html" class="brand-logo">
+                <img src="assets/nabu-logo.png" alt="NABU Logo" class="brand-icon-img">
+                <span id="agency-name" class="brand-title">NABU</span>
+            </a>
+        </div>
+
+        <div class="navbar-right">
+            
+            <div class="lang-switcher">
+                <i class="fa-solid fa-globe"></i>
+                <select id="lang-select">
+                    <option value="ar" selected>العربية</option>
+                    <option value="en">English</option>
+                    <option value="tr">Türkçe</option>
+                </select>
+            </div>
+
+            
+            <button id="theme-toggle" class="icon-btn" title="Toggle Theme">
+                <i class="fa-solid fa-moon" id="theme-icon"></i>
+            </button>
+        </div>
+    </header>
+
+    
+    <main>
+
+        
+        <section class="hero-section">
+            <div id="canvas-container" class="canvas-3d"></div>
+            <div class="hero-overlay"></div>
+
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fa-solid fa-bolt"></i>
+                    <span data-i18n="hero_badge">بوابتك المباشرة للدراسة في تركيا</span>
+                </div>
+                <h1 data-i18n="hero_title">ابدأ رحلتك الجامعية في جامعة كارابوك بثقة</h1>
+                <p data-i18n="hero_subtitle">
+                    وكالة نابو تتكفل بكافة الإجراءات للطلاب العرب: من تجهيز وتحويل الأوراق، تأمين القبول الأكاديمي، حجز السكن الطلابي، وتوفير تذاكر الطيران والاستقبال.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="majors.html" class="btn btn-primary">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <span data-i18n="btn_explore_majors">استكشف التخصصات المتاحة</span>
+                    </a>
+                    <a href="https://wa.me/message/MKQ5H6XTA3RKH1" target="_blank" class="btn btn-whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <span data-i18n="btn_chat_whatsapp">تحدث معنا عبر الواتساب</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        
+        <section class="section services-section">
+            <div class="section-header">
+                <h2 data-i18n="services_title">خدماتنا الشاملة للطلاب</h2>
+                <p data-i18n="services_desc">نرافقك من بلدك وحتى استقرارك داخل مقعدك الدراسي في كارابوك</p>
+            </div>
+
+            <div class="cards-grid">
+                <div class="glass-card">
+                    <div class="card-icon"><i class="fa-solid fa-file-signature"></i></div>
+                    <h3 data-i18n="service1_title">إدارة وتجهيز الملفات</h3>
+                    <p data-i18n="service1_desc">نترجم ونصدق كافة الوثائق والشهادات ونضمن تقديمها للجامعة بدون أي أخطاء تؤدي للرفض.</p>
+                </div>
+
+                <div class="glass-card">
+                    <div class="card-icon"><i class="fa-solid fa-building-user"></i></div>
+                    <h3 data-i18n="service2_title">تأمين السكن الطلابي</h3>
+                    <p data-i18n="service2_desc">نوفر لك خيارات سكن مريحة وقريبة من الحرم الجامعي تتناسب مع ميزانيتك ورغبتك.</p>
+                </div>
+
+                <div class="glass-card">
+                    <div class="card-icon"><i class="fa-solid fa-plane-arrival"></i></div>
+                    <h3 data-i18n="service3_title">حجز الطيران والاستقبال</h3>
+                    <p data-i18n="service3_desc">نؤمن لك تذاكر الطيران بأفضل الأسعار ونستقبلك فور وصولك لتركيا ونوصلك لمقر سكنك.</p>
+                </div>
+
+                <div class="glass-card">
+                    <div class="card-icon"><i class="fa-solid fa-handshake-angle"></i></div>
+                    <h3 data-i18n="service4_title">المتابعة المستمرة</h3>
+                    <p data-i18n="service4_desc">فريقنا معك خطوة بخطوة لاستخراج الإقامة الطلابية وكارت المواصلات وفتح الحساب البنكي.</p>
+                </div>
+            </div>
+        </section>
+
+        
+        <section class="section slider-section">
+            <div class="section-header">
+                <h2 data-i18n="carousel_title">حرم جامعة كارابوك (Karabük Üniversitesi)</h2>
+                <p data-i18n="carousel_desc">نظرة عامة على الحياة والمرافق داخل الحرم الجامعي</p>
+            </div>
+
+            <div class="carousel-container">
+                <button id="prev-slide" class="carousel-arrow left"><i class="fa-solid fa-chevron-right"></i></button>
+                <div class="carousel-track-wrapper">
+                    <div class="carousel-track" id="carousel-track">
+                        <div class="carousel-slide active">
+                            <img src="assets/karabuk1.jpg" alt="Karabuk University Campus">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="assets/karabuk2.jpg" alt="Karabuk Engineering Faculty">                        </div>
+                        <div class="carousel-slide">
+                            <img src="assets/karabuk3.jpg" alt="Karabuk Student Life">
+                        </div>
+                    </div>
+                </div>
+                <button id="next-slide" class="carousel-arrow right"><i class="fa-solid fa-chevron-left"></i></button>
+            </div>
+        </section>
+
+        
+        <section class="section info-section">
+            <div class="section-header">
+                <h2 data-i18n="uni_info_title">لماذا تختار جامعة كارابوك؟</h2>
+                <p data-i18n="uni_info_subtitle">حقائق وأرقام تجعلها الخيار الأول للطلاب الدوليين</p>
+            </div>
+
+            <div class="highlights-grid">
+                <div class="highlight-box">
+                    <div class="highlight-number">#35</div>
+                    <h4 data-i18n="stat1_title">التصنيف المحلي</h4>
+                    <p data-i18n="stat1_desc">مصنفة ضمن أفضل 35 جامعة في تركيا لعام 2026 مع اعتراف دولي وأوروبي كامل.</p>
+                </div>
+
+                <div class="highlight-box">
+                    <div class="highlight-number">12,000+</div>
+                    <h4 data-i18n="stat2_title">طالب دولي</h4>
+                    <p data-i18n="stat2_desc">مجتمع متعدد الثقافات يمثل أكثر من 90 دولة، مما يوفر بيئة طلابية مرحبة وممتازة.</p>
+                </div>
+
+                <div class="highlight-box">
+                    <div class="highlight-number">Erasmus+</div>
+                    <h4 data-i18n="stat3_title">التبادل الأوروبي</h4>
+                    <p data-i18n="stat3_desc">فرص ممتازة لدراسة فصل أو عام كامل في إحدى الدول الأوروبية الشريكة.</p>
+                </div>
+
+                <div class="highlight-box">
+                    <div class="highlight-number">%100</div>
+                    <h4 data-i18n="stat4_title">معيشة اقتصادية</h4>
+                    <p data-i18n="stat4_desc">تكاليف السكن والدراسة في كارابوك منخفضة جداً مقارنة بإسطنبول وأنقرة.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    
+    <footer class="site-footer">
+        <div class="footer-container">
+            
+            <div class="social-links" style="display: none;">
+                <a href="https://x.com" target="_blank" aria-label="X Twitter" class="social-icon">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+                <a href="https://instagram.com" target="_blank" aria-label="Instagram" class="social-icon">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://wa.me/message/MKQ5H6XTA3RKH1" target="_blank" aria-label="WhatsApp" class="social-icon">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+            </div>
+            
+            
+            <div class="copyright-text">
+                <p><span id="copyright-brand">NABU</span> <span id="copyright-year">2026</span> - <span data-i18n="footer_rights">جميع الحقوق محفوظة</span></p>
+            </div>
+        </div>
+
+        
+        <button id="back-to-top" class="back-to-top-btn" aria-label="Back to Top">
+            <i class="fa-solid fa-arrow-up"></i>
+        </button>
+    </footer>
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+    
+    <script src="js/translations.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/3d-viewer.js"></script> 
+</body>
+</html>

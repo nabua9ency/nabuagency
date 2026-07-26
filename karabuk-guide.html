@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="site_title">نابو | NABU - الدراسة في جامعة كارابوك</title>
+    <link rel="icon" href="assets/images/nabu-logo.png" type="image/png">
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet">
+    
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    
+    <div id="global-canvas-container" class="global-canvas"></div>
+
+    
+    <div id="sidebar-overlay" class="sidebar-overlay"></div>
+
+    
+    <aside id="sidebar" class="sidebar">
+        <div class="sidebar-header">
+            <div class="logo-container" style="display: flex; align-items: center; gap: 10px;">
+                <img src="assets/nabu-logo.png" alt="NABU Logo" class="brand-icon-img">
+                <span class="logo-text">NABU</span>
+            </div>
+            <button id="close-sidebar" class="icon-btn" aria-label="Close Menu">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+
+        <nav class="sidebar-nav">
+            <ul>
+                <li>
+                    <a href="index.html">
+                        <i class="fa-solid fa-house"></i>
+                        <span data-i18n="nav_home">الرئيسية</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="process.html">
+                        <i class="fa-solid fa-route"></i>
+                        <span data-i18n="nav_process">خطوات التقديم</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="majors.html">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                        <span data-i18n="nav_majors">التخصصات والأسعار</span>
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="karabuk-guide.html">
+                        <i class="fa-solid fa-city"></i>
+                        <span data-i18n="nav_guide">دليل مدينة كارابوك</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="sidebar-divider"></div>
+
+        <div class="sidebar-extra">
+            <p class="sidebar-title" data-i18n="quick_contact">تواصل مباشر</p>
+            <a href="https://wa.me/message/MKQ5H6XTA3RKH1" target="_blank" class="sidebar-whatsapp-btn">
+                <i class="fa-brands fa-whatsapp"></i>
+                <span data-i18n="whatsapp_agent">مستشار التقديم</span>
+            </a>
+        </div>
+    </aside>
+
+    
+    <header class="navbar">
+        <div class="navbar-left">
+            <button id="toggle-sidebar" class="icon-btn" aria-label="Toggle Menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <a href="index.html" class="brand-logo">
+                <img src="assets/nabu-logo.png" alt="NABU Logo" class="brand-icon-img">
+                <span id="agency-name" class="brand-title">NABU</span>
+            </a>
+        </div>
+
+        <div class="navbar-right">
+            
+            <div class="lang-switcher">
+                <i class="fa-solid fa-globe"></i>
+                <select id="lang-select">
+                    <option value="ar" selected>العربية</option>
+                    <option value="en">English</option>
+                    <option value="tr">Türkçe</option>
+                </select>
+            </div>
+
+            
+            <button id="theme-toggle" class="icon-btn" title="Toggle Theme">
+                <i class="fa-solid fa-moon" id="theme-icon"></i>
+            </button>
+        </div>
+    </header>
+
+    
+    <main>
+
+        
+        <section class="page-header">
+            <div class="header-content">
+                <h1 data-i18n="guide_page_title">دليل الحياة في مدينة كارابوك</h1>
+                <p data-i18n="guide_page_desc">كل ما يحتاجه الطالب وولي أمره لمعرفته عن المدينة والسكن والمعيشة</p>
+            </div>
+        </section>
+
+        
+        <section class="section guide-section">
+            <div class="cards-grid">
+                
+                
+                <div class="glass-card">
+                    <div class="card-icon"><i class="fa-solid fa-map-location-dot"></i></div>
+                    <h3 data-i18n="guide_sec1_title">عن مدينة كارابوك</h3>
+                    <p data-i18n="guide_sec1_desc">مدينة هادئة وآمنة تقع في شمال تركيا، وتشتهر بطبيعتها الخلابة وقربها من مدينة سفران بولو التاريخية.</p>
+                </div>
+
+                
+                <div class="glass-card">
+                    <div class="card-icon"><i class="fa-solid fa-bed"></i></div>
+                    <h3 data-i18n="guide_sec2_title">السكن الطلابي والتكاليف</h3>
+                    <p data-i18n="guide_sec2_desc">تتوفر سكنات حكومية وخاصة وشقق طلابية بأسعار مناسبة جداً تبدأ من تكاليف منخفضة مقارنة بالمدن الكبرى.</p>
+                </div>
+
+                
+                <div class="glass-card">
+                    <div class="card-icon"><i class="fa-solid fa-store"></i></div>
+                    <h3 data-i18n="guide_sec3_title">المطاعم والخدمات العربية</h3>
+                    <p data-i18n="guide_sec3_desc">تضم المدينة العديد من المطاعم والمحلات العربية، بالإضافة لمكاتب الصرافة وخدمات المواصلات المباشرة للجامعة.</p>
+                </div>
+
+                
+                <div class="glass-card">
+                    <div class="card-icon"><i class="fa-solid fa-bus"></i></div>
+                    <h3 data-i18n="guide_transport_title">المواصلات العامة</h3>
+                    <p data-i18n="guide_transport_desc">تمتلك المدينة شبكة مواصلات ممتازة تربط كافة الأحياء بالحرم الجامعي، ويتمتع الطلاب بتخفيضات كبيرة باستخدام الكارت الطلابي.</p>
+                </div>
+
+            </div>
+        </section>
+
+        
+        <section class="section map-section">
+            <div class="section-header">
+                
+                <h2 data-i18n="guide_map_title">خريطة الحرم الجامعي والمدينة</h2>
+            </div>
+            <div class="map-container">
+                
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3000.742042127264!2d32.6558!3d41.2049!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x408354c46f1406cd%3A0x6b63d917822d9921!2sKarab%C3%BCk%20University!5e0!3m2!1sen!2str!4v1714567890123!5m2!1sen!2str" 
+                    width="100%" 
+                    height="450" 
+                    style="border:0; border-radius: 12px;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </section>
+
+    </main>
+
+    
+    <footer class="site-footer">
+        <div class="footer-container">
+            
+            <div class="social-links" style="display: none;">
+                <a href="https://x.com" target="_blank" aria-label="X Twitter" class="social-icon">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+                <a href="https://instagram.com" target="_blank" aria-label="Instagram" class="social-icon">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href=""https://wa.me/message/MKQ5H6XTA3RKH1" target="_blank" aria-label="WhatsApp" class="social-icon">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+            </div>
+
+            
+            <div class="copyright-text">
+                <p><span id="copyright-brand">NABU</span> <span id="copyright-year">2026</span> - <span data-i18n="footer_rights">جميع الحقوق محفوظة</span></p>
+            </div>
+        </div>
+
+        
+        <button id="back-to-top" class="back-to-top-btn" aria-label="Back to Top">
+            <i class="fa-solid fa-arrow-up"></i>
+        </button>
+    </footer>
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+    
+    <script src="js/translations.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/global-3d-bg.js"></script> 
+</body>
+</html>

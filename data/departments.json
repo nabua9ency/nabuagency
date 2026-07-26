@@ -1,0 +1,590 @@
+[
+    {
+        "id": "comp_eng_tr",
+        "category": "Engineering",
+        "title": {
+            "ar": "هندسة الحاسوب (تركي)",
+            "en": "Computer Engineering (Turkish)",
+            "tr": "Bilgisayar Mühendisliği (Türkçe)"
+        },
+        "degree": "bachelor",
+        "duration": "4",
+        "language": "%100 Türkçe"
+    },
+    {
+        "id": "comp_eng_en",
+        "category": "Engineering",
+        "title": {
+            "ar": "هندسة الحاسوب (إنجليزي)",
+            "en": "Computer Engineering (English)",
+            "tr": "Bilgisayar Mühendisliği (İngilizce)"
+        },
+        "degree": "bachelor",
+        "duration": "5",
+        "language": "%100 English"
+    },
+    {
+        "id": "soft_eng_tr",
+        "category": "Engineering",
+        "title": {
+            "ar": "هندسة البرمجيات",
+            "en": "Software Engineering",
+            "tr": "Yazılım Mühendisliği"
+        },
+        "degree": "bachelor",
+        "duration": "4",
+        "language": "%100 Türkçe"
+    },
+    {
+        "id": "elec_eng_tr",
+        "category": "Engineering",
+        "title": {
+            "ar": "الهندسة الكهربائية والإلكترونية (تركي)",
+            "en": "Electrical-Electronics Engineering (Turkish)",
+            "tr": "Elektrik-Elektronik Mühendisliği (Türkçe)"
+        },
+        "degree": "bachelor",
+        "duration": "4",
+        "language": "%100 Türkçe"
+    },
+    {
+        "id": "elec_eng_en",
+        "category": "Engineering",
+        "title": {
+            "ar": "الهندسة الكهربائية والإلكترونية (إنجليزي)",
+            "en": "Electrical-Electronics Engineering (English)",
+            "tr": "Elektrik-Elektronik Mühendisliği (İngilizce)"
+        },
+        "degree": "bachelor",
+        "duration": "5",
+        "language": "%100 English"
+    },
+    {
+        "id": "civil_eng_tr",
+        "category": "Engineering",
+        "title": {
+            "ar": "الهندسة المدنية",
+            "en": "Civil Engineering",
+            "tr": "İnşaat Mühendisliği"
+        },
+        "degree": "bachelor",
+        "duration": "4",
+        "language": "%100 Türkçe"
+    },
+    {
+        "id": "mech_eng_tr",
+        "category": "Engineering",
+        "title": {
+            "ar": "الهندسة الميكانيكية (تركي)",
+            "en": "Mechanical Engineering (Turkish)",
+            "tr": "Makine Mühendisliği (Türkçe)"
+        },
+        "degree": "bachelor",
+        "duration": "4",
+        "language": "%100 Türkçe"
+    },
+    {
+        "id": "mech_eng_en",
+        "category": "Engineering",
+        "title": {
+            "ar": "الهندسة الميكانيكية (إنجليزي)",
+            "en": "Mechanical Engineering (English)",
+            "tr": "Makine Mühendisliği (İngilizce)"
+        },
+        "degree": "bachelor",
+        "duration": "5",
+        "language": "%100 English"
+    },
+    {
+        "id": "mechatronics_eng_tr",
+        "category": "Engineering",
+        "title": {
+            "ar": "هندسة الميكاترونكس",
+            "en": "Mechatronics Engineering",
+            "tr": "Mekatronik Mühendisliği"
+        },
+        "degree": "bachelor",
+        "duration": "4",
+        "language": "%100 Türkçe"
+    },
+    {
+        "id": "industrial_eng_tr",
+        "category": "Engineering",
+        "title": {
+            "ar": "الهندسة الصناعية",
+            "en": "Industrial Engineering",
+            "tr": "Endüstri Mühendisliği"
+        },
+        "degree": "bachelor",
+        "duration": "4",
+        "language": "%100 Türkçe"
+    },
+    {
+        "id": "chemistry_tr",
+        "category": "Engineering",
+        "title": {
+            "ar": "الكيمياء",
+            "en": "Chemistry",
+            "tr": "Kimya"
+        },
+        "degree": "bachelor",
+        "duration": "4",
+        "language": "%100 Türkçe"
+    },
+    {
+        "id": "math_tr",
+        "category": "Engineering",
+        "title": {
+            "ar": "الرياضيات",
+            "en": "Mathematics",
+            "tr": "Matematik"
+        },
+        "degree": "bachelor",
+        "duration": "4",
+        "language": "%100 Türkçe"
+    },
+    {
+        "id": "biomedical_eng_tr",
+        "category": "Engineering",
+        "title": {
+            "ar": "الهندسة الطبية الحيوية",
+            "en": "Biomedical Engineering",
+            "tr": "Biyomedikal Mühendisliği"
+        },
+        "degree": "bachelor",
+        "duration": "4",
+        "language": "%100 Türkçe"
+    },
+    {
+        "id": "automotive_eng_tr",
+        "category": "Engineering",
+        "title": {
+            "ar": "هندسة السيارات",
+            "en": "Automotive Engineering",
+            "tr": "Otomotiv Mühendisliği"
+        },
+        "degree": "bachelor",
+        "duration": "4",
+        "language": "%100 Türkçe"
+    },
+    {
+        "id": "metallurgy_eng_tr",
+        "category": "Engineering",
+        "title": {
+            "ar": "هندسة الميتالورجيا والمواد (تركي)",
+            "en": "Metallurgy & Materials Engineering (Turkish)",
+            "tr": "Metalurji ve Malzeme Mühendisliği (Türkçe)"
+        },
+        "degree": "bachelor",
+        "duration": "4",
+        "language": "%100 Türkçe"
+    },
+    {
+        "id": "metallurgy_eng_en",
+        "category": "Engineering",
+        "title": {
+            "ar": "هندسة الميتالورجيا والمواد (إنجليزي)",
+            "en": "Metallurgy & Materials Engineering (English)",
+            "tr": "Metalurji ve Malzeme Mühendisliği (İngilizce)"
+        },
+        "degree": "bachelor",
+        "duration": "5",
+        "language": "%100 English"
+    },
+    {
+        "id": "rail_systems_eng_tr",
+        "category": "Engineering",
+        "title": {
+            "ar": "هندسة أنظمة السكك الحديدية (تركي)",
+            "en": "Rail Systems Engineering (Turkish)",
+            "tr": "Raylı Sistemler Mühendisliği (Türkçe)"
+        },
+        "degree": "bachelor",
+        "duration": "4",
+        "language": "%100 Türkçe"
+    },
+    {
+        "id": "rail_systems_eng_en",
+        "category": "Engineering",
+        "title": {
+            "ar": "هندسة أنظمة السكك الحديدية (إنجليزي)",
+            "en": "Rail Systems Engineering (English)",
+            "tr": "Raylı Sistemler Mühendisliği (İngilizce)"
+        },
+        "degree": "bachelor",
+        "duration": "5",
+        "language": "%100 English"
+    },
+    {
+        "id": "actuarial_tr",
+        "category": "Business",
+        "title": {
+            "ar": "العلوم الاكتوارية",
+            "en": "Actuarial Science",
+            "tr": "Aktüerya Bilimleri"
+        },
+        "degree": "bachelor",
+        "duration": "4",
+        "language": "%100 Türkçe"
+    },
+    {
+        "id": "finance_tr",
+        "category": "Business",
+        "title": {
+            "ar": "المالية والمصرفية",
+            "en": "Finance & Banking",
+            "tr": "Finans ve Bankacılık"
+        },
+        "degree": "bachelor",
+        "duration": "4",
+        "language": "%100 Türkçe"
+    },
+    {
+        "id": "public_relations_tr",
+        "category": "Business",
+        "title": {
+            "ar": "العلاقات العامة",
+            "en": "Public Relations",
+            "tr": "Halkla İlişkiler"
+        },
+        "degree": "bachelor",
+        "duration": "4",
+        "language": "%100 Türkçe"
+    },
+    {
+        "id": "business_admin_tr",
+        "category": "Business",
+        "title": {
+            "ar": "إدارة الأعمال (تركي)",
+            "en": "Business Administration (Turkish)",
+            "tr": "İşletme (Türkçe)"
+        },
+        "degree": "bachelor",
+        "duration": "4",
+        "language": "%100 Türkçe"
+    },
+    {
+        "id": "business_admin_en",
+        "category": "Business",
+        "title": {
+            "ar": "إدارة الأعمال (إنجليزي)",
+            "en": "Business Administration (English)",
+            "tr": "İşletme (İngilizce)"
+        },
+        "degree": "bachelor",
+        "duration": "5",
+        "language": "%100 English"
+    },
+    {
+        "id": "economics_tr",
+        "category": "Economics",
+        "title": {
+            "ar": "الاقتصاد",
+            "en": "Economics",
+            "tr": "İktisat"
+        },
+        "degree": "bachelor",
+        "duration": "4",
+        "language": "%100 Türkçe"
+    },
+    {
+        "id": "political_science_tr",
+        "category": "Economics",
+        "title": {
+            "ar": "العلوم السياسية والإدارة العامة",
+            "en": "Political Science & Public Admin",
+            "tr": "Siyaset Bilimi ve Kamu Yönetimi"
+        },
+        "degree": "bachelor",
+        "duration": "4",
+        "language": "%100 Türkçe"
+    },
+    {
+        "id": "social_work_tr",
+        "category": "Economics",
+        "title": {
+            "ar": "الخدمة الاجتماعية",
+            "en": "Social Work",
+            "tr": "Sosyal Hizmet"
+        },
+        "degree": "bachelor",
+        "duration": "4",
+        "language": "%100 Türkçe"
+    },
+    {
+        "id": "international_relations_tr",
+        "category": "Economics",
+        "title": {
+            "ar": "العلاقات الدولية (تركي)",
+            "en": "International Relations (Turkish)",
+            "tr": "Uluslararası İlişkiler (Türkçe)"
+        },
+        "degree": "bachelor",
+        "duration": "4",
+        "language": "%100 Türkçe"
+    },
+    {
+        "id": "international_relations_en",
+        "category": "Economics",
+        "title": {
+            "ar": "العلاقات الدولية (إنجليزي)",
+            "en": "International Relations (English)",
+            "tr": "Uluslararası İlişkiler (İngilizce)"
+        },
+        "degree": "bachelor",
+        "duration": "5",
+        "language": "%100 English"
+    },
+    {
+        "id": "archaeology_tr",
+        "category": "Humanities",
+        "title": {
+            "ar": "علم الآثار",
+            "en": "Archaeology",
+            "tr": "Arkeoloji"
+        },
+        "degree": "bachelor",
+        "duration": "4",
+        "language": "%100 Türkçe"
+    },
+    {
+        "id": "geography_tr",
+        "category": "Humanities",
+        "title": {
+            "ar": "الجغرافيا",
+            "en": "Geography",
+            "tr": "Coğrafya"
+        },
+        "degree": "bachelor",
+        "duration": "4",
+        "language": "%100 Türkçe"
+    },
+    {
+        "id": "philosophy_tr",
+        "category": "Humanities",
+        "title": {
+            "ar": "الفلسفة",
+            "en": "Philosophy",
+            "tr": "Felsefe"
+        },
+        "degree": "bachelor",
+        "duration": "4",
+        "language": "%100 Türkçe"
+    },
+    {
+        "id": "psychology_tr",
+        "category": "Humanities",
+        "title": {
+            "ar": "علم النفس",
+            "en": "Psychology",
+            "tr": "Psikoloji"
+        },
+        "degree": "bachelor",
+        "duration": "4",
+        "language": "%100 Türkçe"
+    },
+    {
+        "id": "art_history_tr",
+        "category": "Humanities",
+        "title": {
+            "ar": "تاريخ الفن",
+            "en": "Art History",
+            "tr": "Sanat Tarihi"
+        },
+        "degree": "bachelor",
+        "duration": "4",
+        "language": "%100 Türkçe"
+    },
+    {
+        "id": "sociology_tr",
+        "category": "Humanities",
+        "title": {
+            "ar": "علم الاجتماع",
+            "en": "Sociology",
+            "tr": "Sosyoloji"
+        },
+        "degree": "bachelor",
+        "duration": "4",
+        "language": "%100 Türkçe"
+    },
+    {
+        "id": "history_tr",
+        "category": "Humanities",
+        "title": {
+            "ar": "التاريخ",
+            "en": "History",
+            "tr": "Tarih"
+        },
+        "degree": "bachelor",
+        "duration": "4",
+        "language": "%100 Türkçe"
+    },
+    {
+        "id": "turkish_lit_tr",
+        "category": "Humanities",
+        "title": {
+            "ar": "اللغة التركية وآدابها",
+            "en": "Turkish Language & Literature",
+            "tr": "Türk Dili ve Edebiyatı"
+        },
+        "degree": "bachelor",
+        "duration": "4",
+        "language": "%100 Türkçe"
+    },
+    {
+        "id": "english_lit_en",
+        "category": "Humanities",
+        "title": {
+            "ar": "اللغة الإنجليزية وآدابها",
+            "en": "English Language & Literature",
+            "tr": "İngiliz Dili ve Edebiyatı"
+        },
+        "degree": "bachelor",
+        "duration": "5",
+        "language": "%100 English"
+    },
+    {
+        "id": "architecture_tr",
+        "category": "Architecture",
+        "title": {
+            "ar": "الهندسة المعمارية",
+            "en": "Architecture",
+            "tr": "Mimarlık"
+        },
+        "degree": "bachelor",
+        "duration": "4",
+        "language": "%100 Türkçe"
+    },
+    {
+        "id": "industrial_design_tr",
+        "category": "Industrial Design",
+        "title": {
+            "ar": "التصميم الصناعي",
+            "en": "Industrial Design",
+            "tr": "Endüstriyel Tasarım"
+        },
+        "degree": "bachelor",
+        "duration": "4",
+        "language": "%100 Türkçe"
+    },
+    {
+        "id": "gastronomy_tr",
+        "category": "Tourism",
+        "title": {
+            "ar": "فنون الطهي",
+            "en": "Gastronomy & Culinary Arts",
+            "tr": "Gastronomi ve Mutfak Sanatları"
+        },
+        "degree": "bachelor",
+        "duration": "4",
+        "language": "%100 Türkçe"
+    },
+    {
+        "id": "recreation_tr",
+        "category": "Tourism",
+        "title": {
+            "ar": "إدارة الترويح",
+            "en": "Recreation Management",
+            "tr": "Rekreasyon Yönetimi"
+        },
+        "degree": "bachelor",
+        "duration": "4",
+        "language": "%100 Türkçe"
+    },
+    {
+        "id": "tourism_management_tr",
+        "category": "Tourism",
+        "title": {
+            "ar": "إدارة السياحة",
+            "en": "Tourism Management",
+            "tr": "Turizm İşletmeciliği"
+        },
+        "degree": "bachelor",
+        "duration": "4",
+        "language": "%100 Türkçe"
+    },
+    {
+        "id": "tourism_guidance_tr",
+        "category": "Tourism",
+        "title": {
+            "ar": "الإرشاد السياحي",
+            "en": "Tourism Guidance",
+            "tr": "Turizm Rehberliği"
+        },
+        "degree": "bachelor",
+        "duration": "4",
+        "language": "%100 Türkçe"
+    },
+    {
+        "id": "journalism_tr",
+        "category": "Communication",
+        "title": {
+            "ar": "الصحافة",
+            "en": "Journalism",
+            "tr": "Gazetecilik"
+        },
+        "degree": "bachelor",
+        "duration": "4",
+        "language": "%100 Türkçe"
+    },
+    {
+        "id": "radio_tv_cinema_tr",
+        "category": "Communication",
+        "title": {
+            "ar": "الإذاعة والتلفزيون والسينما",
+            "en": "Radio-TV-Cinema",
+            "tr": "Radyo, Televizyon ve Sinema"
+        },
+        "degree": "bachelor",
+        "duration": "4",
+        "language": "%100 Türkçe"
+    },
+    {
+        "id": "sports_management_tr",
+        "category": "Sports",
+        "title": {
+            "ar": "الإدارة الرياضية",
+            "en": "Sports Management",
+            "tr": "Spor Yöneticiliği"
+        },
+        "degree": "bachelor",
+        "duration": "4",
+        "language": "%100 Türkçe"
+    },
+    {
+        "id": "forest_eng_tr",
+        "category": "Forestry",
+        "title": {
+            "ar": "هندسة الغابات",
+            "en": "Forest Engineering",
+            "tr": "Orman Mühendisliği"
+        },
+        "degree": "bachelor",
+        "duration": "4",
+        "language": "%100 Türkçe"
+    },
+    {
+        "id": "nature_conservation_tr",
+        "category": "Forestry",
+        "title": {
+            "ar": "الحفاظ على الطبيعة والتنوع البيولوجي",
+            "en": "Nature Conservation & Biodiversity Management",
+            "tr": "Doğa Koruma ve Biyolojik Çeşitlilik"
+        },
+        "degree": "bachelor",
+        "duration": "4",
+        "language": "%100 Türkçe"
+    },
+    {
+        "id": "theology_tr",
+        "category": "Theology",
+        "title": {
+            "ar": "الإلهيات",
+            "en": "Theology",
+            "tr": "İlahiyat"
+        },
+        "degree": "bachelor",
+        "duration": "4",
+        "language": "%100 Türkçe"
+    }
+]
