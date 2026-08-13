@@ -925,6 +925,8 @@ html[lang="tr"] .alert-dates-list li {
 
 .calendar-card {
     text-align: right;
+    align-self: start; /* This stops the box from stretching to fill the empty space */
+    height: fit-content;
 }
 
 html[lang="en"] .calendar-card, 
