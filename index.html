@@ -6,24 +6,19 @@
     <title data-i18n="site_title">نابو | NABU - الدراسة في جامعة كارابوك</title>
     <link rel="icon" href="assets/images/nabu-logo.png" type="image/png">
     
-    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet">
-    
     
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
 
-    
     <div id="sidebar-overlay" class="sidebar-overlay"></div>
 
-    
     <aside id="sidebar" class="sidebar">
         <div class="sidebar-header">
             <div class="logo-container" style="display: flex; align-items: center; gap: 10px;">
@@ -75,7 +70,6 @@
         </div>
     </aside>
 
-    
     <header class="navbar">
         <div class="navbar-left">
             <button id="toggle-sidebar" class="icon-btn" aria-label="Toggle Menu">
@@ -98,22 +92,19 @@
                 </select>
             </div>
 
-            
             <button id="theme-toggle" class="icon-btn" title="Toggle Theme">
                 <i class="fa-solid fa-moon" id="theme-icon"></i>
             </button>
         </div>
     </header>
 
-    
     <main>
 
-        
         <section class="hero-section">
             <div id="canvas-container" class="canvas-3d"></div>
             <div class="hero-overlay"></div>
 
-            <div class="hero-content">
+<div class="hero-content reveal-on-scroll">
                 <div class="hero-badge">
                     <i class="fa-solid fa-bolt"></i>
                     <span data-i18n="hero_badge">بوابتك المباشرة للدراسة في تركيا</span>
@@ -123,12 +114,30 @@
                     وكالة نابو تتكفل بكافة الإجراءات للطلاب العرب: من تجهيز وتحويل الأوراق، تأمين القبول الأكاديمي، حجز السكن الطلابي، وتوفير تذاكر الطيران والاستقبال.
                 </p>
 
+                <!-- Urgency / Date Alert Block -->
+                <div class="registration-alert">
+                    <i class="fa-solid fa-stopwatch"></i>
+                    <div class="alert-text">
+                        <span class="alert-title" data-i18n="alert_urgent">سارع بالتسجيل! الوقت والمقاعد محدودة</span>
+                        <ul class="alert-dates-list">
+                            <li>
+                                <strong data-i18n="alert_bachelor">البكالوريوس والمعاهد:</strong> 
+                                <span>28/01/2026 - 30/11/2026</span>
+                                <span class="alert-note" data-i18n="alert_bachelor_note">(التسجيل الفعلي: 1 يوليو - 30 نوفمبر)</span>
+                            </li>
+                            <li>
+                                <strong data-i18n="alert_master">الماجستير والدكتوراه:</strong> 
+                                <span>01/07/2026 - 30/11/2026</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
                 <div class="hero-actions">
                     <a href="majors.html" class="btn btn-primary">
                         <i class="fa-solid fa-magnifying-glass"></i>
                         <span data-i18n="btn_explore_majors">استكشف التخصصات المتاحة</span>
                     </a>
-                    <a href="https://wa.me/201068200950" target="_blank" class="btn btn-whatsapp">
+                    <a href="https://wa.me/201068200950" target="_blank" class="btn btn-whatsapp pulse-button">
                         <i class="fa-brands fa-whatsapp"></i>
                         <span data-i18n="btn_chat_whatsapp">تحدث معنا عبر الواتساب</span>
                     </a>
@@ -136,33 +145,120 @@
             </div>
         </section>
 
+        <!-- Academic Calendar Section -->
+        <section class="section calendar-section">
+            <div class="section-header reveal-on-scroll">
+                <h2 data-i18n="cal_title">تقويم الفصل الأول 2026 / 2027</h2>
+                <p data-i18n="cal_subtitle">المواعيد الأكاديمية الهامة لجامعة كارابوك</p>
+            </div>
+
+            <div class="cards-grid">
+                <!-- Course Registration -->
+                <div class="glass-card calendar-card reveal-on-scroll">
+                    <div class="card-icon"><i class="fa-solid fa-book-open"></i></div>
+                    <h3 data-i18n="cal_reg_title">تنزيل المواد</h3>
+                    <ul class="calendar-list">
+                        <li>
+                            <span class="cal-label" data-i18n="cal_reg_p1">الفترة الأولى:</span>
+                            <strong class="cal-date">07/09/2026 - 16/09/2026</strong>
+                            <small data-i18n="cal_time_note">(حتى الساعة 17:00)</small>
+                        </li>
+                        <li>
+                            <span class="cal-label" data-i18n="cal_reg_p2">الفترة الثانية:</span>
+                            <strong class="cal-date">21/09/2026 - 24/09/2026</strong>
+                            <small data-i18n="cal_time_note">(حتى الساعة 17:00)</small>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Classes -->
+                <div class="glass-card calendar-card reveal-on-scroll">
+                    <div class="card-icon"><i class="fa-solid fa-school"></i></div>
+                    <h3 data-i18n="cal_classes_title">مواعيد الدوام</h3>
+                    <ul class="calendar-list">
+                        <li>
+                            <span class="cal-label" data-i18n="cal_classes_start">بداية الدوام:</span>
+                            <strong class="cal-date">21/09/2026</strong>
+                        </li>
+                        <li>
+                            <span class="cal-label" data-i18n="cal_classes_end">نهاية الدوام:</span>
+                            <strong class="cal-date">01/01/2027</strong>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Exams -->
+                <div class="glass-card calendar-card reveal-on-scroll">
+                    <div class="card-icon"><i class="fa-solid fa-file-pen"></i></div>
+                    <h3 data-i18n="cal_exams_title">الامتحانات والنتائج</h3>
+                    <ul class="calendar-list">
+                        <li>
+                            <span class="cal-label" data-i18n="cal_exam_visa">امتحانات الفيزا:</span>
+                            <strong class="cal-date">07/11 - 15/11/2026</strong>
+                            <small data-i18n="cal_exam_visa_res">(النتائج: 18/12)</small>
+                        </li>
+                        <li>
+                            <span class="cal-label" data-i18n="cal_exam_makeup">امتحانات التلافي:</span>
+                            <strong class="cal-date">30/11 - 04/12/2026</strong>
+                            <small data-i18n="cal_exam_makeup_res">(النتائج: 06/12)</small>
+                        </li>
+                        <li>
+                            <span class="cal-label" data-i18n="cal_exam_final">الفاينال:</span>
+                            <strong class="cal-date">04/01 - 17/01/2027</strong>
+                            <small data-i18n="cal_exam_final_res">(النتائج: 18/01)</small>
+                        </li>
+                        <li>
+                            <span class="cal-label" data-i18n="cal_exam_comp">التكميلي:</span>
+                            <strong class="cal-date">19/01 - 24/01/2027</strong>
+                            <small data-i18n="cal_exam_comp_res">(النتائج: 26/01)</small>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Other Exams -->
+                <div class="glass-card calendar-card reveal-on-scroll">
+                    <div class="card-icon"><i class="fa-solid fa-check-double"></i></div>
+                    <h3 data-i18n="cal_other_title">اختبارات أخرى</h3>
+                    <ul class="calendar-list">
+                        <li>
+                            <span class="cal-label" data-i18n="cal_exempt">معافيات المواد المشتركة:</span>
+                            <strong class="cal-date">19/09/2026</strong>
+                        </li>
+                        <li>
+                            <span class="cal-label" data-i18n="cal_single">امتحان المادة الواحدة (Tek Sınav):</span>
+                            <strong class="cal-date">01/02/2027</strong>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
         
         <section class="section services-section">
-            <div class="section-header">
+            <div class="section-header reveal-on-scroll">
                 <h2 data-i18n="services_title">خدماتنا الشاملة للطلاب</h2>
                 <p data-i18n="services_desc">نرافقك من بلدك وحتى استقرارك داخل مقعدك الدراسي في كارابوك</p>
             </div>
 
             <div class="cards-grid">
-                <div class="glass-card">
+                <div class="glass-card reveal-on-scroll">
                     <div class="card-icon"><i class="fa-solid fa-file-signature"></i></div>
                     <h3 data-i18n="service1_title">إدارة وتجهيز الملفات</h3>
                     <p data-i18n="service1_desc">نترجم ونصدق كافة الوثائق والشهادات ونضمن تقديمها للجامعة بدون أي أخطاء تؤدي للرفض.</p>
                 </div>
 
-                <div class="glass-card">
+                <div class="glass-card reveal-on-scroll">
                     <div class="card-icon"><i class="fa-solid fa-building-user"></i></div>
                     <h3 data-i18n="service2_title">تأمين السكن الطلابي</h3>
                     <p data-i18n="service2_desc">نوفر لك خيارات سكن مريحة وقريبة من الحرم الجامعي تتناسب مع ميزانيتك ورغبتك.</p>
                 </div>
 
-                <div class="glass-card">
+                <div class="glass-card reveal-on-scroll">
                     <div class="card-icon"><i class="fa-solid fa-plane-arrival"></i></div>
                     <h3 data-i18n="service3_title">حجز الطيران والاستقبال</h3>
                     <p data-i18n="service3_desc">نؤمن لك تذاكر الطيران بأفضل الأسعار ونستقبلك فور وصولك لتركيا ونوصلك لمقر سكنك.</p>
                 </div>
 
-                <div class="glass-card">
+                <div class="glass-card reveal-on-scroll">
                     <div class="card-icon"><i class="fa-solid fa-handshake-angle"></i></div>
                     <h3 data-i18n="service4_title">المتابعة المستمرة</h3>
                     <p data-i18n="service4_desc">فريقنا معك خطوة بخطوة لاستخراج الإقامة الطلابية وكارت المواصلات وفتح الحساب البنكي.</p>
@@ -170,14 +266,13 @@
             </div>
         </section>
 
-        
         <section class="section slider-section">
-            <div class="section-header">
+            <div class="section-header reveal-on-scroll">
                 <h2 data-i18n="carousel_title">حرم جامعة كارابوك (Karabük Üniversitesi)</h2>
                 <p data-i18n="carousel_desc">نظرة عامة على الحياة والمرافق داخل الحرم الجامعي</p>
             </div>
 
-            <div class="carousel-container">
+            <div class="carousel-container reveal-on-scroll">
                 <button id="prev-slide" class="carousel-arrow left"><i class="fa-solid fa-chevron-right"></i></button>
                 <div class="carousel-track-wrapper">
                     <div class="carousel-track" id="carousel-track">
@@ -195,43 +290,167 @@
             </div>
         </section>
 
-        
         <section class="section info-section">
-            <div class="section-header">
+            <div class="section-header reveal-on-scroll">
                 <h2 data-i18n="uni_info_title">لماذا تختار جامعة كارابوك؟</h2>
                 <p data-i18n="uni_info_subtitle">حقائق وأرقام تجعلها الخيار الأول للطلاب الدوليين</p>
             </div>
 
             <div class="highlights-grid">
-                <div class="highlight-box">
-                    <div class="highlight-number">#35</div>
+                <div class="highlight-box reveal-on-scroll">
+                    <div class="highlight-number">#<span class="counter" data-target="35">0</span></div>
                     <h4 data-i18n="stat1_title">التصنيف المحلي</h4>
                     <p data-i18n="stat1_desc">مصنفة ضمن أفضل 35 جامعة في تركيا لعام 2026 مع اعتراف دولي وأوروبي كامل.</p>
                 </div>
 
-                <div class="highlight-box">
-                    <div class="highlight-number">12,000+</div>
+                <div class="highlight-box reveal-on-scroll">
+                    <div class="highlight-number"><span class="counter" data-target="12000">0</span>+</div>
                     <h4 data-i18n="stat2_title">طالب دولي</h4>
                     <p data-i18n="stat2_desc">مجتمع متعدد الثقافات يمثل أكثر من 90 دولة، مما يوفر بيئة طلابية مرحبة وممتازة.</p>
                 </div>
 
-                <div class="highlight-box">
+                <div class="highlight-box reveal-on-scroll">
                     <div class="highlight-number">Erasmus+</div>
                     <h4 data-i18n="stat3_title">التبادل الأوروبي</h4>
                     <p data-i18n="stat3_desc">فرص ممتازة لدراسة فصل أو عام كامل في إحدى الدول الأوروبية الشريكة.</p>
                 </div>
 
-                <div class="highlight-box">
-                    <div class="highlight-number">%100</div>
+                <div class="highlight-box reveal-on-scroll">
+                    <div class="highlight-number">%<span class="counter" data-target="100">0</span></div>
                     <h4 data-i18n="stat4_title">معيشة اقتصادية</h4>
                     <p data-i18n="stat4_desc">تكاليف السكن والدراسة في كارابوك منخفضة جداً مقارنة بإسطنبول وأنقرة.</p>
                 </div>
             </div>
         </section>
 
+<!-- Trust Signals / Testimonials Carousel Section -->
+        <section class="section testimonials-section">
+            <div class="section-header reveal-on-scroll">
+                <h2 data-i18n="testimonials_title">آراء طلابنا</h2>
+            </div>
+            
+            <div class="testimonial-carousel-container reveal-on-scroll">
+                <button id="prev-testim" class="carousel-arrow left"><i class="fa-solid fa-chevron-right"></i></button>
+                
+                <div class="testimonial-track-wrapper">
+                    <div class="testimonial-track" id="testimonial-track">
+                        
+                        <!-- Post 1 (5 Stars) -->
+                        <div class="testimonial-slide">
+                            <div class="glass-card x-post-card">
+                                <div class="x-post-header">
+                                    <div class="x-avatar"><i class="fa-solid fa-user"></i></div>
+                                    <div class="x-user-info">
+                                        <h4 class="x-name" data-i18n="testim_1_name">محمود السيد</h4>
+                                    </div>
+                                    <div class="x-stars">
+                                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                                <div class="x-post-body">
+                                    <p data-i18n="testim_1_text">بجد وكالة نابو أحسن ناس اتعاملت معاهم، خلصولي ورق القبول في جامعة كارابوك بسرعة جداً واستقبلوني في المطار كمان. تسلم إيديكم!</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Post 2 (4 Stars - user2026) -->
+                        <div class="testimonial-slide">
+                            <div class="glass-card x-post-card">
+                                <div class="x-post-header">
+                                    <div class="x-avatar"><i class="fa-solid fa-user-secret"></i></div>
+                                    <div class="x-user-info">
+                                        <h4 class="x-name" data-i18n="testim_2_name">مجهول</h4>
+                                    </div>
+                                    <div class="x-stars">
+                                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                                    </div>
+                                </div>
+                                <div class="x-post-body">
+                                    <p data-i18n="testim_2_text">تجربتي معاهم كانت كويسة أوي. السكن اللي وفروه قريب من الجامعة ونظيف، بس أخدوا وقت شوية في الرد على الواتساب.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Post 3 (5 Stars) -->
+                        <div class="testimonial-slide">
+                            <div class="glass-card x-post-card">
+                                <div class="x-post-header">
+                                    <div class="x-avatar" style="background: #e879f9;"><i class="fa-solid fa-user"></i></div>
+                                    <div class="x-user-info">
+                                        <h4 class="x-name" data-i18n="testim_3_name">سلمى طارق</h4>
+                                    </div>
+                                    <div class="x-stars">
+                                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                                <div class="x-post-body">
+                                    <p data-i18n="testim_3_text">شكراً تيم نابو على كل حاجة! أنا كنت خايفة جداً من موضوع السفر لوحدي، بس هما كانوا معايا خطوة بخطوة لحد ما طلعت الإقامة.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Post 4 (3 Stars) -->
+                        <div class="testimonial-slide">
+                            <div class="glass-card x-post-card">
+                                <div class="x-post-header">
+                                    <div class="x-avatar" style="background: #38bdf8;"><i class="fa-solid fa-user"></i></div>
+                                    <div class="x-user-info">
+                                        <h4 class="x-name" data-i18n="testim_4_name">عمر علي</h4>
+                                    </div>
+                                    <div class="x-stars">
+                                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i>
+                                    </div>
+                                </div>
+                                <div class="x-post-body">
+                                    <p data-i18n="testim_4_text">الوكالة محترمة والأسعار بتاعتهم أحسن من غيرهم كتير. الجامعة نفسها ممتازة بس مدينة كارابوك هادية بزيادة للناس اللي بتحب الدوشة.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Post 5 (5 Stars) -->
+                        <div class="testimonial-slide">
+                            <div class="glass-card x-post-card">
+                                <div class="x-post-header">
+                                    <div class="x-avatar" style="background: #fbbf24;"><i class="fa-solid fa-user"></i></div>
+                                    <div class="x-user-info">
+                                        <h4 class="x-name" data-i18n="testim_5_name">كريم</h4>
+                                    </div>
+                                    <div class="x-stars">
+                                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                                <div class="x-post-body">
+                                    <p data-i18n="testim_5_text">من غير نابو مكنتش هعرف أعمل أي حاجة في ورق الجامعة. الترجمة والتصديق وكل حاجة خلصت وأنا في مصر. أنصح بيهم جداً.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Post 6 (4 Stars) -->
+                        <div class="testimonial-slide">
+                            <div class="glass-card x-post-card">
+                                <div class="x-post-header">
+                                    <div class="x-avatar" style="background: #a78bfa;"><i class="fa-solid fa-user"></i></div>
+                                    <div class="x-user-info">
+                                        <h4 class="x-name" data-i18n="testim_6_name">ندى</h4>
+                                    </div>
+                                    <div class="x-stars">
+                                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                                    </div>
+                                </div>
+                                <div class="x-post-body">
+                                    <p data-i18n="testim_6_text">التقديم كان سهل وبسيط، ومساعدتهم ليا في استخراج كارت المواصلات وفتح الحساب البنكي ريحتني كتير أول ما وصلت.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                
+                <button id="next-testim" class="carousel-arrow right"><i class="fa-solid fa-chevron-left"></i></button>
+            </div>
+        </section>
     </main>
 
-    
     <footer class="site-footer">
         <div class="footer-container">
             
@@ -247,22 +466,18 @@
                 </a>
             </div>
             
-            
             <div class="copyright-text">
                 <p><span id="copyright-brand">NABU</span> <span id="copyright-year">2026</span> - <span data-i18n="footer_rights">جميع الحقوق محفوظة</span></p>
             </div>
         </div>
 
-        
         <button id="back-to-top" class="back-to-top-btn" aria-label="Back to Top">
             <i class="fa-solid fa-arrow-up"></i>
         </button>
     </footer>
 
-    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 
-    
     <script src="js/translations.js"></script>
     <script src="js/main.js"></script>
     <script src="js/3d-viewer.js"></script> 

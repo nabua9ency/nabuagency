@@ -1,10 +1,6 @@
-
-
 document.addEventListener("DOMContentLoaded", () => {
     
-    
-    
-    
+    // --- Sidebar Logic ---
     const sidebar = document.getElementById("sidebar");
     const toggleSidebarBtn = document.getElementById("toggle-sidebar");
     const closeSidebarBtn = document.getElementById("close-sidebar");
@@ -27,13 +23,10 @@ document.addEventListener("DOMContentLoaded", () => {
     if (overlay) overlay.addEventListener("click", closeSidebar);
 
 
-    
-    
-    
+    // --- Theme Toggle Logic ---
     const themeToggleBtn = document.getElementById("theme-toggle");
     const themeIcon = document.getElementById("theme-icon");
     const htmlElement = document.documentElement;
-    
     
     const savedTheme = localStorage.getItem("nabu_theme") || "dark";
     htmlElement.setAttribute("data-theme", savedTheme);
@@ -62,9 +55,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
 
-    
-    
-    
+    // --- Back to Top Logic ---
     const backToTopBtn = document.getElementById("back-to-top");
 
     window.addEventListener("scroll", () => {
@@ -85,18 +76,14 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
 
-    
-    
-    
+    // --- Copyright Year Logic ---
     const yearElement = document.getElementById("copyright-year");
     if (yearElement) {
         yearElement.textContent = new Date().getFullYear();
     }
 
 
-    
-    
-    
+    // --- Hero Campus Carousel Logic ---
     const track = document.getElementById("carousel-track");
     const slides = document.querySelectorAll(".carousel-slide");
     const nextBtn = document.getElementById("next-slide");
@@ -106,15 +93,12 @@ document.addEventListener("DOMContentLoaded", () => {
         let currentIndex = 0;
 
         const updateSlidePosition = () => {
-            
             const isRTL = document.documentElement.dir === 'rtl';
-            
             
             slides.forEach((slide, index) => {
                 slide.classList.toggle("active", index === currentIndex);
             });
 
-            
             if(isRTL) {
                 track.style.transform = `translateX(${currentIndex * 100}%)`;
             } else {
@@ -136,7 +120,95 @@ document.addEventListener("DOMContentLoaded", () => {
             });
         }
         
-        
         window.addEventListener('languageChanged', updateSlidePosition);
+    }
+    
+
+    // --- 1. Infinite Scroll Reveal (Global Function) ---
+    const revealOptions = {
+        threshold: 0.15, 
+        rootMargin: "0px 0px -50px 0px" 
+    };
+
+    // Attach it to the 'window' so majors.js can access it
+    window.revealObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('is-visible');
+            } else {
+                entry.target.classList.remove('is-visible');
+            }
+        });
+    }, revealOptions);
+
+    window.observeReveals = function() {
+        document.querySelectorAll('.reveal-on-scroll').forEach(el => {
+            window.revealObserver.observe(el);
+        });
+    };
+
+    // Run it immediately for static HTML elements
+    window.observeReveals();
+    
+    
+    // --- 2. Intersection Observer for Number Counters ---
+    const counterObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const counters = entry.target.querySelectorAll('.counter');
+                counters.forEach(counter => {
+                    const updateCount = () => {
+                        const target = +counter.getAttribute('data-target');
+                        const count = +counter.innerText.replace(/,/g, '');
+                        const inc = Math.ceil(target / 80); 
+                        
+                        if (count < target) {
+                            counter.innerText = (count + inc).toLocaleString();
+                            setTimeout(updateCount, 30);
+                        } else {
+                            counter.innerText = target.toLocaleString();
+                        }
+                    };
+                    updateCount();
+                });
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.5 }); 
+
+    const statsSection = document.querySelector('.info-section');
+    if (statsSection) {
+        counterObserver.observe(statsSection);
+    }
+
+
+    // --- 3. Testimonial Carousel Logic ---
+    const testimTrack = document.getElementById('testimonial-track');
+    const testimSlides = document.querySelectorAll('.testimonial-slide');
+    const testimNextBtn = document.getElementById('next-testim');
+    const testimPrevBtn = document.getElementById('prev-testim');
+    
+    if (testimTrack && testimSlides.length > 0) {
+        let currentTestimIndex = 0;
+
+        function updateTestimonialSlider() {
+            // Check if site is RTL or LTR to slide in the correct direction
+            const isRTL = document.documentElement.dir === 'rtl';
+            const moveAmount = isRTL ? (currentTestimIndex * 100) : -(currentTestimIndex * 100);
+            testimTrack.style.transform = `translateX(${moveAmount}%)`;
+        }
+
+        testimNextBtn.addEventListener('click', () => {
+            currentTestimIndex = (currentTestimIndex + 1) % testimSlides.length;
+            updateTestimonialSlider();
+        });
+
+        testimPrevBtn.addEventListener('click', () => {
+            currentTestimIndex = (currentTestimIndex - 1 + testimSlides.length) % testimSlides.length;
+            updateTestimonialSlider();
+        });
+
+        // Update direction if language changes dynamically
+        window.addEventListener('languageChanged', updateTestimonialSlider);
     }
 });

@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", () => {
             const majorTitle = major.title[currentLanguage] || major.title['en'];
 
             const card = document.createElement("div");
-            card.className = "major-card glass-card";
+            card.className = "major-card glass-card reveal-on-scroll";
             
             // CHANGED BACK TO <button> TO TRIGGER THE AUTO-MESSAGE
             card.innerHTML = `
@@ -64,6 +64,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
             majorsContainer.appendChild(card);
         });
+        
+        // NEW: Tell the animation engine to watch these newly generated cards
+        if (typeof window.observeReveals === 'function') {
+            window.observeReveals();
+        }
 
         // Attach WhatsApp event listeners to the new buttons
         attachWhatsAppListeners();
